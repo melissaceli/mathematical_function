@@ -39,7 +39,7 @@ def calculation_for_rectangle(polygon, retry):
     base, height = get_input_polygon(polygon)
     base, height = check_input(polygon, base, height)
 
-    if retry < 3 and (base <= 0 or height <= 0):
+    if retry <= 3 and (base <= 0 or height <= 0):
         retry += 1
         print(f'The lengths must be positive numbers. Retry {retry}!')
         return calculation_for_rectangle(polygon, retry)
