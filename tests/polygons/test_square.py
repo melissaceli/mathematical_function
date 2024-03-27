@@ -9,11 +9,3 @@ class SquareTest(unittest.TestCase):
         rectangle = Square(side=base)
         self.assertEqual(round(float(base * base), 2), rectangle.area())
         self.assertEqual(base * 4, rectangle.perimeter())
-
-    '''
-    def test_square_not_valid(self):
-        with self.assertRaises(Exception) as context:
-            SquareValidated(side=-3)
-        self.assertTrue("Input should be greater than 0" in str(context.exception))
-    '''
-
