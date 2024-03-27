@@ -4,7 +4,7 @@ from mathematical_function.polygons.square import Square
 
 class SquareTest(unittest.TestCase):
 
-    def test_square(self): ###NB deve iniziare con test_
+    def test_square(self): 
         base = 5
         rectangle = Square(side=base)
         self.assertEqual(round(float(base * base), 2), rectangle.area())
